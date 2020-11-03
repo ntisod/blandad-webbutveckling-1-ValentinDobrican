@@ -1,22 +1,9 @@
 /* body */
 body {
     background: linear-gradient(120deg,#5483D5 , #F1624C );
-}
-h1 {
+    max-width: 13cm;
     color:White;
 }
-h2 {
-    color:White;
-}
-h3 {
-    color:White;
-}
-h3 {
-    font-family: "Times New Roman", Times, serif;
-}
-p {
-    color:White;
-}
-i {
+h1,h2,h3,p,em {
     color:White;
 }
