@@ -7,3 +7,18 @@ body {
 h1,h2,h3,p,em {
     color:White;
 }
+footer {
+    width: 70px;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 20px;
+    box-shadow: 1px 1px 20px #ee5253;
+    text-decoration: none;
+    margin: 1px;
+}
+footer:hover{
+    background-color:#D4918C;
+}
+a{
+    text-decoration: none;
+}
