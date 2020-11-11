@@ -7,7 +7,7 @@ body {
 h1,h2,h3,p,em {
     color:White;
 }
-div {
+footer {
     width: 70px;
 	background-color: #fff;
 	padding: 20px;
@@ -16,7 +16,7 @@ div {
     text-decoration: none;
     margin: 1px;
 }
-div:hover{
+footer:hover{
     background-color:#D4918C;
 }
 a{
