@@ -17,6 +17,7 @@ div {
     box-shadow: 1px 1px 20px #ee5253;
     text-decoration: none;
     margin: 1px;
+    width:50%;
 }
 footer:hover{
     background-color:#D4918C;
