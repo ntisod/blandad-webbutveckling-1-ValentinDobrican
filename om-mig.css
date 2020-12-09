@@ -35,3 +35,13 @@ figcaption{
     padding: 2px;
     text-align: center;
 }
+.menu {
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
+}
+.main {
+    width: 75%;
+    float: left;
+    box-sizing: border-box;
+}
