@@ -42,12 +42,10 @@ img{
 .menu {
     width: 25%;
     float: left;
-    box-sizing: border-box;
 }
 .main {
     width: 75%;
     float: left;
-    box-sizing: border-box;
 }
 [class*="col-"] {
     float: left;
