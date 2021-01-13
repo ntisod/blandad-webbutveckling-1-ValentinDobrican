@@ -5,16 +5,18 @@
 		<title>Räkna ut din BMI!</title>
 		<link rel="stylesheet" href="testtest.css">
 	</head>
+	
 	<script type="text/javascript">
 		function BMI() {
 			var h=document.getElementById('h').value;
-			var w=document.getElementById('w').value;
-			var bmi=w/(h/100*h/100);
+			var v=document.getElementById('v').value;
+			var bmi=v/(h/100*h/100);
 			var bmio=(bmi.toFixed(1));
 
 			document.getElementById("result").innerHTML="Din BMI är " + bmio;
 		}
 	</script>
+	
 	<body>
 		<div>
 			<h2>BMI Calculator</h2>
