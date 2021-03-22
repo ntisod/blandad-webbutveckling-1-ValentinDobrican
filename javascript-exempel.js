@@ -4,9 +4,6 @@ function authorDialog() {
 function Färg(){
     document.getElementById("demo").style.backgroundColor = "lightblue";
 }
-function Namn(){
-    document.getElementById("namn").innerHTML = "Valentin";
-}
 /* Valentin
     Datum: 22 mars 2021
 */
