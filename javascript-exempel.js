@@ -3,7 +3,7 @@ function authorDialog() {
 }
 function Färg(){
     document.getElementById("demo").style.backgroundColor = "blue";
-    document.getElementById("demo").innerHTML = "Valentin" ;
+    document.getElementById("denna").innerHTML = "Valentin" ;
 }
 /* Valentin
     Datum: 22 mars 2021
