@@ -6,11 +6,11 @@ function Färg(){
     document.getElementById("demo").style.backgroundColor = "lightblue";
 }
 function bild() {
-    if (document.getElementById("myImage").src == "Counter-Strike_Global_Offensive_icon.jpg") {
+    if (document.getElementById("myImage").src== "Counter-Strike_Global_Offensive_icon.jpg") {
         document.getElementById("myImage").src = "Cristiano_Ronaldo_20120609_(1).jpg";
     }
     else {
-        document.getElementById("myImage").src == "Counter-Strike_Global_Offensive_icon.jpg";
+        document.getElementById("myImage").src = "Counter-Strike_Global_Offensive_icon.jpg";
     }
 }
 
