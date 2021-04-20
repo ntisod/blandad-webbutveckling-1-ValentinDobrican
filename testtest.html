@@ -4,29 +4,48 @@
 		<meta charset="utf-8">
 		<title>Räkna ut din BMI!</title>
 		<link rel="stylesheet" href="testtest.css">
+
+		<script>
+			function BMI() {
+				var h=document.getElementById('h').value;
+				var v=document.getElementById('v').value;
+				var bmi=v/(h/100*h/100);
+				var bmio=(bmi.toFixed(1));
+
+				if	(bmio<18.5)
+				{
+				document.getElementById("result").innerHTML=("Din BMI är " + bmio);
+				document.getElementById("info").innerHTML=("Undervikt! Om ditt BMI är lägre än 18,5 betyder det att du är underviktig och kommer att må bra efter att ha gått upp i vikt. Om du känner att du behöver hjälp eller support, kontakta din vårdgivare eller licensierade dietist omedelbart. Bra tips för att gå upp i vikt finns i 1177 Vårdguidens allmänna hälsoråd. Läs till exempel hur man äter hälsosamt.")
+				}
+				else if(18.5<=bmio && bmio<=25)
+				{
+				document.getElementById("result").innerHTML=("Din BMI är " + bmio);
+				document.getElementById("info").innerHTML=("Normalvikt! Enligt BMI-skalan är din vikt mycket hälsosam och det är bäst att behålla denna vikt. Ha god fysisk aktivitet genom träning och daglig träning, och det räcker att kombinera med hälsosam mat.")
+				}
+				else if(25<bmio && bmio <= 30)
+				{
+				document.getElementById("result").innerHTML=("Din BMI är " + bmio);
+				document.getElementById("info").innerHTML=("Övervikt! Ditt BMI stiger och når så småningom en övervikt. Om ditt BMI är mellan 25 och 27, finns det en måttlig viktrelaterad negativ hälsorisk. Nu måste vi komma ihåg att BMI bara är ett tal och inte kan beskriva hela verkligheten. Om du är aktiv och äter hälsosamt är risken för sjukdom betydligt lägre än risken för att du inte tränar. Från och med BMI 27 finns det en ökad risk för typ 2-diabetes, högt fett och högt blodtryck.")
+				}
+				else {
+					document.getElementById("result").innerHTML=("Din BMI är " + bmio);
+					document.getElementById("info").innerHTML=("Fetma! Ditt BMI är mer än 30, vilket ökar risken för högt blodtryck, dyslipidemi, hjärt-kärlsjukdom och typ 2-diabetes, men BMI ökar när risken ökar. Träning i form av träning och daglig träning är mycket viktigt för att minska risken för följder. Ärftlighet spelar en roll i början av fetma och fetma-relaterade sjukdomar.")
+				}
+			}
+		</script>
 	</head>
 	
-	<script type="text/javascript">
-		function BMI() {
-			var h=document.getElementById('h').value;
-			var v=document.getElementById('v').value;
-			var bmi=v/(h/100*h/100);
-			var bmio=(bmi.toFixed(1));
-
-			document.getElementById("result").innerHTML="Din BMI är " + bmio;
-		}
-	</script>
 	
 	<body>
 		<div>
-			<h2>BMI Calculator</h2>
+			<h2>BMI Räknare</h2>
 			<p class="text">Längd</p>
 			<input type="text" id="h">
 			<p class="text">Vikt</p>
-			<input type="text" id="w">
+			<input type="text" id="v">
 			<p id="result"></p>
 			<button id="btn" onClick="BMI()">Calculate</button>
-			<p id="info"><strong>OBS! Ange längd i centimeter och vikt i kilogram.</strong></p>
+			<p id="info">OBS! Ange längd i centimeter och vikt i kilogram.</p>
 		</div>
 		
 	<footer>
