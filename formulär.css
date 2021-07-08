@@ -1,0 +1,115 @@
+:root{
+    --knapp: #395c85;
+    --knappöver: #244b78;
+    --bakgrundliten: #588db8;
+    --bakgrund: #cadcf8;
+    --textfält: #9faecf;
+    /*--text: #290e19;*/
+    --text: white;
+    /*blåt, gult, vitt, grått*/
+}
+
+
+input[type=button] {
+    /*background-color: #4CAF50;*/
+    background-color: var(--knapp);
+    border: none;
+    color: var(--text);
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+input[type=button]:hover {
+  /*background-color: #45a049;*/
+  background-color: var(--knappöver);
+}
+
+div {
+  border-radius: 5px;
+  background-color: var(--bakgrundliten);
+  padding: 20px;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #59253a;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: var(--textfält);
+  color: var(--text);
+}
+
+body{
+    max-width: 8cm;
+    text-align: center;
+    margin-left: 40%;
+    background-image: linear-gradient(120deg,#5483D5 , #F1624C );
+}
+
+.fadeout {
+  color: black;
+  background-color: var(--bakgrundliten);
+  font-size: medium;
+  font-family: helvetica;
+  text-align: center;
+  opacity: 0;
+    -webkit-animation: fadeout 10s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadeout 10s; /* Firefox < 16 */
+        -ms-animation: fadeout 10s; /* Internet Explorer */
+         -o-animation: fadeout 10s; /* Opera < 12.1 */
+            animation: fadeout 10s;
+}
+
+@keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+#section1 {
+    height: 690px;
+    
+    background-color: var(--bakgrundliten);
+}
+
+#section2 {
+    height: 690px;
+    background-color: var(--bakgrundliten);
+}
+
+#section3 {
+    height: 690px;
+    background-color: var(--bakgrundliten);
+}
+
+a{
+    /*background-color: #4CAF50;*/
+    background-color: var(--knapp);
+    border: none;
+    color: var(--text);
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+a:hover{
+    /*background-color: #45a049;*/
+    background-color: var(--knappöver);
+}
+
+input{
+    background-color: var(--textfält);
+}
+
+p, label, h1, h2, h3{
+    color: var(--text);
+}
+
+::placeholder{
+    color: var(--text);
+}
